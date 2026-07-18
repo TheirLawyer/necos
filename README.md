@@ -1,2 +1,2 @@
-# necos
+# NECOS
 NEURAL COMMANDS "NECOS"

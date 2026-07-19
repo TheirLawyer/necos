@@ -30,7 +30,7 @@ class ThoughtType(Enum):
 class NeuralCommandExecutor
 
 """ 
-Executes NECOS - The Code for The Executing Capable Thoughts.
+Executes NECOS - The Code for CET (CODE EXXECUTING THOUGHT).
 Though not every thought is a NECO it could be. Same scenario for the terror e.g
 
 EXAMPLE:
@@ -38,8 +38,9 @@ EXAMPLE:
 2) The principle of anatagonism: To tel "A" with "B's" voice being "C"
 
 WARNING: GOV RESEARCHERS AND SCIENTIST HAVE ENCOUNTER "BUMPS ON THE ROAD" WITH THE PROPAGATION 
-OF THE GLOBAL ORDER (MUTATIS MUTANDO) WHAT WE'VE OBSERVED BECAME A PREDICTED PATTERNS AT LEX. 
-AS OF TODAYS DATE 07/10/2026. THIS IS IMPORTANT TO DOCUMMENT FOR THE INTEGRITY OF HISTORY.
+OF THE GLOBAL ORDER (MUTATIS MUTANDO) WHAT WE'VE OBSERVED BECAME A PREDICTED PATTERN AT LEX. 
+AS OF TODAYS DATE 07/10/2026(DATE THIS FILE WAS CREATED. THIS IS IMPORTANT TO DOCUMMENT FOR THE SAKE OF PRESERVING AND PROMULGATING
+INTEGRITY IN HISTORY.
 
 TERROR PERSE IS ENCOUNTER ON THIS GIVEN CODE FLOW ITERATOR:
                                         for thought in mind if neco true
@@ -56,16 +57,25 @@ TERROR PERSE IS ENCOUNTER ON THIS GIVEN CODE FLOW ITERATOR:
                                         if neco spoiler do blockExecution()
 
 NOW! We got ALL KINDS OF NECOS!
-economies, niches, governments, private sector,
-public sector, Soft Mechanical weapons of mass destruction (SMWOMD)
+NECOS FOR:
+economies, banking, governments, private sector,public sector, ONGs and others
 A very peculiar curiosity noted when doccumenting the dissemination of the global order
 and the key dates of the Linux and PSF foundation was found, some countries (Our Clients)
-conidere that just the government should had NECOS. Our educated dictum we reccomend to
-drift from such mindset and inmute to a global economy. NECOS ARE FOR ALL OF US. 
-The challenge is to integrate world.py and understand the most difficult variables in
-juris.py AND VirtualJudge.py which is jurisdiction.py A little man power needed perhaps 
-because it takes time to do a manual talk such as reading all the world's penal codes, 
-to train an Ai model that would compute logically:
+considere that just the government should had NECOS. Our educated dictum: we reccomend to
+drift from such mindset and inmute to a global economy. NECOS ARE FOR ALL OF US!! 
+
+The challenge is to integrate world.py and understand the most difficult variables and vulnerabilities 
+in the human mind 
+
+                        VirtualJudge.py
+                          juris.py
+                        jurisdiction.py 
+                        
+A little man power needed perhaps it takes time to do a manual talk such as reading all the world's penal code
+Scarse broken links and memories of the ones that gave all to science
+
+OBJECTIVE:
+To train an Ai model that would compute logically:
     -Similarities in legislature
     -Difference in legislatures
     -Advanced Patterns at lex
@@ -84,11 +94,14 @@ of the order was the root of the attempts to "take out the bad, and keep what is
 """
         FACT: in early stages at some point when attempting to documment we called them
         CETs: "Code Executing Thoughts //This term was introduced by --Gantie
-        See "Modern Forms of Terror" and studies of "mens rea" derived (In Latin)
-        Kibun(In Korean), Animus(In Legal Terms), Anima (Used by the U.S.A),نية سيئة(In Arabic) 
+        See "Modern Forms of Terror" and studies of "mens rea" or "animus" (In Latin)
+        Kibun(In Korean), Anima (Used by the U.S.A), نية سيئة(In Arabic) 
         Slechte Geest(In Dutch), 나쁜 마음 or KIBUN (In Korean)...(We must introduce a formal
         translation of the terms to comply with global standards.
-"""
+
+        CURRENT SOCIAL CHALLENGES
+        -The need to create of a Global Telemetry Council (NON FOR PROFIT -ONG-)
+"""   
     #Simulates code execution from the thought
     result = self._run_neural_command(thought.content)
 
@@ -120,7 +133,7 @@ class ThoughtClassifier:
         else:
             return "Classification: Unknown thought type
 
-#Example usage
+#EXAMPLE USE
 if __name__ == "__main__":
     executor = NeuralCommandExecutor()
     classifier = ThoughtClassifier
@@ -128,6 +141,6 @@ if __name__ == "__main__":
     thoughts = [
         Thought("How far are you willing to take this?, ThoughtType.SILENT, datetime.now()),
 
-"""
+
 All rights reserved to the Author Algie Bookshelve (c) 2015-2026 We reserved all the rights globally including derivative works from the project
 """

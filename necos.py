@@ -3,7 +3,7 @@ from dataclasses import dataclass
 from datetime import datetime
 from typing import Optional, Any, Dict
 
-# Import telemetry explicitly (user requested this integration)
+# Import telemetry explicitly (first attempted integration)
 try:
     import telemetry
     telemetry_client = telemetry.Client()
@@ -41,8 +41,8 @@ class Thought:
             self.metadata = {}
 
     def is_necos(self) -> bool:
-        """True if this thought is explicitly a NECOS (Neural Command)."""
-        return self.thought_type == ThoughtType.NECOS or self.executes_code
+        """True if this thought is explicitly a NECO (Neural Command)."""
+        return self.thought_type == ThoughtType.NECO or self.executes_code
 
     def can_be_necos(self) -> bool:
         """Inference: practically any thought could be a NECO (we treat this as a potential)."""
@@ -61,7 +61,7 @@ class Thought:
         return self.thought_type == ThoughtType.SILENT and not self.executes_code
 
 
-class NeuralCommandExecutor:
+class NeuralCommandExecutor: #Materialized vision of what we originally attempted to describe as CET_igniter
     """Executes NECOS and consults animus subsystem and telemetry where available."""
 
     def __init__(self, animus_db: Optional[Any] = None):
@@ -164,3 +164,99 @@ if __name__ == "__main__":
     print("Execution log entries:")
     for entry in executor.execution_log:
         print(entry["executed_at"], entry["result"]) 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+"""
+# All rights reserved to the author Guillermo Antonio Herrera Argueta || Algie Bookshelves (c) 2015-2026
+
+  _______       __
+ /   ------.   / ._`_
+|  /         ~--~    \
+| |             __    `.____________________ _^-----^
+| |  I=|=======/--\=========================| o o o |
+\ |  I=|=======\__/=========================|_o_o_o_|
+ \|                   /                       ~    ~
+   \       .---.    .
+     -----'     ~~''
+
+------------------------------------------------------------
+
+    All rights reserved to the author:
+    Guillermo Antonio Herrera Argueta
+    We reserve the rights globally. This applies to all derivative works. We reserve the use, functionality, mechanism, snippets of code,
+    essence and substance in the integrity of intellectual property at core.All our projects are for profit and are showcased to our 
+    partners only ©2015-2026.
+    
+    BECOME A PARTNER:
+    -email: TheirLawyer@hotmail.com
+    
+        designed/engineered with the law in mind an "eng legis"
+        mind. We wish for dedication, commitment and 
+    
+    We enforce and embrace bonafide innovation, if you wish to contribute you may make a request to access our private repositories at:
+    
+        ######################################
+        ##    github.com/TheirLawyer         #
+        ######################################
+    
+    We are always open to like minded deities that would
+    "pour the matter in essence"or simply people that 
+    understood the principle of environmental impact of 
+    thoughts, not to forget to mention all those of good
+    #anima that found deep thought in the conquest of mutatis mutando,
+    purifying their #anima and choose to adopt our core doctrine:
+    
+    ##############################################
+    ---------------------------------------------
+    "GOOD THOUGHTS ARE GOOD FOR THE ENVIRONMENT"
+    ----------------------------------------------
+    ##############################################
+    
+    if{
+    you wish to contribute you may sign up as volunteer
+    just use the contacts infra.
+    
+    CONTACTS:
+    
+    for technical concerns:
+    -email:     our@engineer.com
+    -Instagram: @ourengineer
+    
+    for goverment solutions, implementations and partnerships
+    -email: goverment@contrator.net
+    
+    for legal compliance:
+    -email: jurisprudence@dr.com
+    
+    Social Media{
+        X:          @TheirLawyer
+        Instagram   @theirlawyer
+        Reddit      r/theirlawyer
+        
+    }
+    
+    if{
+        
+        You wish to value our work and reciprocate, you can make a donation to keep our research alive,
+        your donations are welcome and good'ol Memo will dance la macarena for yall xD!
+        
+           #################################
+           ##     CASH APP: $TheirLawyer  ##
+           #################################     
+                
+    }
+    
+------------------------------------------------------------
